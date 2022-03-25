@@ -1,0 +1,40 @@
+body {
+    font-family: Futura!important;
+    letter-spacing: 0.02em!important;
+}
+.vh-100{
+    height : 100vh
+}
+/* fontsize */
+.rem1p3 {
+    font-size: 1.3rem;
+}
+/* background */
+.bg-green {
+    background: #6ab0c4;
+}
+
+.bg-blue {
+    background: #333552;
+}
+
+/* effect */
+.hover {
+    cursor: pointer;
+}
+.hover:hover{
+    opacity: 0.9;
+}
+
+/* specific layout */
+.money-box{
+    margin: 1em 0;
+    border: double 5px white;
+    background: #333549;
+    color: white;
+}
+.calculate-box{
+    background: #333549;
+    color: white;
+    border: solid 2px white
+}

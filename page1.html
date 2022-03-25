@@ -1,0 +1,56 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="banking app.css">
+    <script src="https://kit.fontawesome.com/f41a63bd92.js" crossorigin="anonymous"></script>
+</head>
+<title>Page1</title>
+<body>
+    <div class="bg-dark vh-100 d-flex justify-content-center align-items-center">
+        <div class="col-10 col-md-7 d-flex align-items-center">
+            <div id="initial-form" class="bg-white col-12 p-4 text-center">
+                <div class="pb-3">
+                    <h2 class="text-center">
+                        Please type your information below
+                    </h2>
+                </div>
+            <form class="form" id="bank-form" onsubmit="mainBankPageController(initializeUserAccount(),config.initialForm); event.preventDefault()">
+                <div class="form-group">
+                    <input type="email" class="form-control" name="Email" placeholder="Email" required> 
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" name="First name" placeholder="First name" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" name="Last name" placeholder="Last name" required>
+                </div>
+                <div class="form-group">
+                    <input type="number" name="First deposit" placeholder="Enter your first deposit" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="userAccountType" id="userAccountType1" value="Savings" checked required>
+                        <label class="form-check-label" for="userAccountType1">Savings</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="userAccountType" id="userAccountType2" required>
+                        <label class="form-check-label" for="userAccountType2">Checkings</label>
+                    </div>
+                </div>
+                <button type="submit" class="col-12 btn btn-primary">Submit</button>
+            </form>
+            </div>
+            <div id="bankPage" class="d-none bg-green col-12 text-center text-white">
+            </div>
+            <div id="sidePage" class="d-none bg-white col-12 text-center p-4">
+            </div>
+            <div id=""></div>
+        </div>
+    </div>
+    <script src="banking app.js"></script>
+</body>
+
